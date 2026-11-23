@@ -1,0 +1,35 @@
+
+# Dataset
+data/
+*.zip
+
+# Training artefacts: exclude everything except best.pt
+runs/*
+!runs/resnet18/
+runs/resnet18/*
+!runs/resnet18/best.pt
+
+# Model weights
+*.pt
+*.pth
+*.onnx
+!runs/resnet18/best.pt
+
+# Python environments
+torch-gpu/
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Streamlit and editors
+.streamlit/
+.vscode/
+.idea/
+
+# Secrets
+.env
